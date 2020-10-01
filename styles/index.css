@@ -1,37 +1,17 @@
-body {
-    background-image: url("../image_src/main.jpg");
-    background-repeat: no-repeat;
-    background-size: auto;
-    font-family: 'Ubuntu', sans-serif;
-  }
+*{
+  margin: 0;
+  padding: 0;
+}
 
-  a{
-    text-decoration: none;
-  }
-  
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
+.header{
+  height: 100vh;
+}
 
-  h1.main_header{
-      padding: 10px;
-      margin: 10px;
-      color: black;
-  }
+.navbar-style{
+  box-shadow: 0 5px 10px #efefef;
+}
 
-  header{
-    border-radius: 10px;
-    margin: 10px;
-    background: gray;
-    opacity: 80%;
-  }
+.logo{
+  height: 60px;
+  padding: 2px 10px;
+}
