@@ -135,3 +135,24 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.cards3 {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+}
+
+.cont {
+  align-self: center;
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.cont1 {
+  align-self: center;
+  margin: 10px;
+  width: 60px;
+  height: 50px;
+}
