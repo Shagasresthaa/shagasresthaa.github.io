@@ -107,7 +107,7 @@ body {
 
 @media (max-width: 800px) {
   .bd1 {
-    height: 240vh;
+    height: max-content;
   }
 
   .cards2 {
