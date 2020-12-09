@@ -46,6 +46,7 @@ hr {
   padding: 20px;
   box-shadow: 0px 0px 10px 3px grey;
   border-radius: 10px;
+  margin-bottom: 100px;
 }
 
 .buttons {
@@ -56,4 +57,15 @@ hr {
   font-size: x-large;
   width: 20rem;
   height: 3rem;
+}
+
+.infos {
+  text-align: center;
+}
+
+.infos:hover {
+  text-decoration: none;
+  border-radius: 100%;
+  box-shadow: 0 0 15px rgba(6, 120, 226, 0);
+  color: #056fb6;
 }

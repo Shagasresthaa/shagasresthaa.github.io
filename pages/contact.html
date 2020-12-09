@@ -20,6 +20,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/628503b113.js" crossorigin="anonymous"></script>
+
     <!--<a href="https://pngtree.com/so/computer?sce=attr">computer png from pngtree.com</a>-->
 
 </head>
@@ -51,7 +53,7 @@
     </nav>
 
     <div class="container contact-form">
-        <h1 style="text-align: center;">Contact form</h1>
+        <h1 style="text-align: center;"><b>Contact form</b></h1>
         <div class="column">
 
 
@@ -59,17 +61,20 @@
 
                 <div class="form-group">
                     <label><b>Name</b></label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="name">
                 </div>
 
                 <div class="form-group">
                     <label><b>Email</b></label>
-                    <input type="email" class="form-control">
+                    <i class="fas fa-info-circle infos" href="#" data-toggle="tooltip" data-placement="top"
+                        title="I dont store any of your email address its just for replying back to you :)"></i>
+                    <input type="email" class="form-control" id="emailAddress">
+
                 </div>
 
                 <div class="form-group">
                     <label><b>Message</b></label>
-                    <textarea class="form-control" rows="7"></textarea>
+                    <textarea class="form-control" rows="7" id="messageArea"></textarea>
                 </div>
 
                 <div class="form-group buttons">
