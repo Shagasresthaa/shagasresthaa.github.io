@@ -1,31 +1,134 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+  height: 100vh;
+}
+
+.logo {
+  height: 60px;
+  padding: 2px 10px;
+}
+
+.icon-bar {
+  background: darkorange;
+}
+
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cardview {
+  margin-top: 100px;
+}
+
+.titletxt {
+  text-align: center;
+}
+
+
+.titltxt {
+  font-size: 3rem;
+}
+
+.cards {
+  margin-top: 20px;
+  margin: 30px;
+}
+
+.cimg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card {
+  margin: 30px;
+  transition: all 0.5s ease;
+}
+
+.card-body {
+  padding: 1px;
+  border-radius: 0 15px 15px 0;
+  background: rgba(12, 110, 221, 0.5);
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px grey;
+}
+
+.statustxtwip {
+  background: none;
+  color: orange;
+}
+
+.statustxtcomp {
+  background: none;
+  color: green;
+}
+
+.card-title {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+@media (min-width:900px) {
+  .btn {
+    margin-left: 10px;
+    margin-right: 10px;
   }
-  
-  .header{
-    height: 100vh;
-  }
-  
-  .navbar-style{
-    box-shadow: 0 5px 10px #efefef;
-  }
-  
-  .logo{
-    height: 60px;
-    padding: 2px 10px;
-  }
-  
-  .icon-bar{
-    background: darkorange;
+}
+
+@media (max-width:800px) {
+
+  .card {
+    flex-direction: row;
   }
 
-  .navbar-brand {
-    padding: 0;
+  .cimg {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
-  .navbar-nav .nav-link {
-    padding-top: 0;
-    padding-bottom: 0;
-    height: 50px;
-    line-height: 50px;
+
+  .card-header {
+    display: flex;
+    width: 100%;
   }
+
+  .btn {
+    margin: 10px;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .btn-hldr {
+    display: flex;
+  }
+
+  .card-body {
+    padding: 1px;
+    border-radius: 0 0 15px 15px;
+    background: rgba(12, 110, 221, 0.5);
+  }
+}

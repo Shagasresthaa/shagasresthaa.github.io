@@ -25,34 +25,78 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <nav class="navbar navbar-style navbar-expand-sm bg-dark navbar-dark fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#iconm">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <a href=""><img class="logo rounded-circle" src="/assets/proj.png"></a>
-                    <a href="#" class="navbar-brand">
-                        <h5 style="font-family: 'Ubuntu', sans-serif;">Projects</h5>
-                    </a>
-                </div>
-
-                <div class="collapse navbar-collapse" id="iconm">
-                    <ul class="nav navbar-nav ml-auto navbar-expand-sm">
-                        <li class="nav-item px-4"><a class="nav-link" href="/index.html"
-                                style="font-family: 'Ubuntu', sans-serif;">About Me</a></li>
-                        <li class="nav-item px-4"><a class="nav-link" href="/pages/projects.html"
-                                style="font-family: 'Ubuntu', sans-serif;">Projects</a></li>
-                        <li class="nav-item px-4"><a class="nav-link" href="/pages/contact.html"
-                                style="font-family: 'Ubuntu', sans-serif;">Contact</a></li>
-                    </ul>
-                </div>
-
+    <nav class="navbar navbar-style navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#iconm">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a href=""><img class="logo rounded-circle" src="/assets/proj.png"></a>
+                <a href="#" class="navbar-brand">
+                    <h5 style="font-family: 'Ubuntu', sans-serif;">Projects</h5>
+                </a>
             </div>
-        </nav>
-    </header>
+
+            <div class="collapse navbar-collapse" id="iconm">
+                <ul class="nav navbar-nav ml-auto navbar-expand-sm">
+                    <li class="nav-item px-4"><a class="nav-link" href="/index.html"
+                            style="font-family: 'Ubuntu', sans-serif;">About Me</a></li>
+                    <li class="nav-item px-4"><a class="nav-link" href="/pages/projects.html"
+                            style="font-family: 'Ubuntu', sans-serif;">Projects</a></li>
+                    <li class="nav-item px-4"><a class="nav-link" href="/pages/contact.html"
+                            style="font-family: 'Ubuntu', sans-serif;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="cardview">
+        <div class="titletxt">
+            <h1 class="titltxt"><b>Featured Projects</b></h1>
+        </div>
+        <div class="cards">
+            <div class="card flex-row flex-wrap w-80" style="
+            border-radius: 15px;
+  border: none;">
+                <div class="card-header">
+                    <img src="../assets/github.png" alt="" class="cimg">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Weather Monitoring System</h3>
+                    <h5 class="statuscardtxt">Status:<b><mark class="statustxtwip">Work In Progress</mark></b></h5>
+                    <p class="card-text">A simple weather monitoring system using Arduino, ESP8266-01 using a custom
+                        Python Flask REST API to store data which can be retreived via Android App or the React Based
+                        Dashboard.
+                    </p>
+                    <div class="btn-hldr">
+                        <a href="#" class="btn btn-primary">Details</a>
+                        <a href="#" class="btn btn-primary">Go To Site</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card flex-row flex-wrap w-80" style="
+            border-radius: 15px;
+  border: none;">
+                <div class="card-header border-0">
+                    <img src="../assets/github.png" alt="" class="cimg">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">Covid-19 Tracker Website</h3>
+                    <h5 class="statuscardtxt">Status:<b><mark class="statustxtcomp">Completed</mark></b></h5>
+                    <p class="card-text">A flask based Covid-19 Tracker Application for India. Shows data about
+                        spread of Covid-19. This is a group project and my frst
+                        exposure to Python, Flask app development and Machine Learning.</p>
+                    <div class="btn-hldr">
+                        <a href="#" class="btn btn-primary">Details</a>
+                        <a href="#" class="btn btn-primary">Go To Site</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
