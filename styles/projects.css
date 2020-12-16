@@ -67,7 +67,6 @@ body {
 .card-body {
   padding: 1px;
   border-radius: 0 15px 15px 0;
-  background: rgba(12, 110, 221, 0.5);
 }
 
 .card:hover {
@@ -89,10 +88,27 @@ body {
   font-weight: bolder;
 }
 
-@media (min-width:900px) {
+
+.card-header {
+  border-radius: 15px 0 0 15px;
+}
+
+@media (min-width:1800px) {
+
+  .card-header {
+    border-radius: 15px 0 0 15px !important;
+  }
+
   .btn {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media (min-width:800px) and (max-width:1800px) {
+  .card-header {
+    border-radius: 15px 15px 0 0 !important;
+    width: 100%;
   }
 }
 
@@ -109,6 +125,7 @@ body {
   }
 
   .card-header {
+    border-radius: 15px 15px 0 0 !important;
     display: flex;
     width: 100%;
   }
@@ -129,6 +146,5 @@ body {
   .card-body {
     padding: 1px;
     border-radius: 0 0 15px 15px;
-    background: rgba(12, 110, 221, 0.5);
   }
 }
