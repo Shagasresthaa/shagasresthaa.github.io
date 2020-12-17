@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Covid19 Project</title>
+    <title>Weather Monitoring System Project</title>
 
     <link rel="stylesheet" type="text/css" href="/styles/weatherproj.css">
 
@@ -48,6 +48,81 @@
             </div>
         </div>
     </nav>
+
+    <div class="proj_bdy">
+        <div class="intro_img">
+            <img src="../assets/weather.png" alt="" class="iimg">
+        </div>
+        <div class="prjnm">
+            <h1 class="hdrnm">Weather Monitoring System</h1>
+        </div>
+        <div class="prj_intro">
+            <p class="intro_txt">
+                &emsp;&emsp;&emsp;This Weather Monitoring System Project is a simple IoT project used to collect
+                Weather Data using deployed IoT Weather Nodes. The deployed nodes sends data to a flask based API that
+                uploads data to Postgres DB. The stats can be monitored via the React Based Weather Dashboard
+                Application. Each Node consists of 3 main sensors:<br></br>
+            </p>
+            <!--
+            <h4 class="sens_txt"><b>1. BMP-180 (GY-68)</b></h4><br></br>
+            <div class="sens_img"><img src="../assets//bmp180.png" alt="" class="sensimgsrc"></div>
+            <br></br>
+            <p class="intro_txt">
+                &emsp;&emsp;&emsp;BMP-180 is a low cost
+                sensor that monitors Temperature,
+                Pressure and
+                Altitude with high precision. BMP-180 utilizes I2C/IIC protocol for communication with the
+                micro-controller.<br></br> 2. DHT-22<br></br>3. ML8511 (GYML8511
+                breakout)<br></br>
+            </p>-->
+
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/bmp180.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>BMP-180 (GY-68)</b></h3>
+                        </h5>
+                        <p class="card-text">BMP-180 is a low cost
+                            sensor that monitors Temperature,
+                            Pressure and
+                            Altitude with high precision. BMP-180 utilizes I2C/IIC protocol for communication with the
+                            micro-controller.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/dht22.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>DHT-22</b></h3>
+                        </h5>
+                        <p class="card-text">DHT-22 is a low power Temperature and Humidity Sensor with relatively high
+                            accuracy. This is used to monitor the Humidity and also for cross referencing with the
+                            BMP-180 sensor Temperature readings. It has a single data pin for getting data from sensor.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/GYML8511.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>ML8511 (GYML8511 breakout)</b></h3>
+                        </h5>
+                        <p class="card-text">ML8511 is a low cost high accuracy UV intensity sensor. This is used to
+                            measure the UV index of the surroundings. This uses the data and the voltage readings from
+                            sensor to calculate the UV intensity.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 
 </html>
