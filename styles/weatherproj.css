@@ -55,6 +55,7 @@ body {
 }
 
 .intro_txt {
+    text-align: justify;
     font-size: 1.5rem;
     line-height: 35px;
 }
@@ -70,21 +71,9 @@ body {
     display: flex;
 }
 
-/*
-.sens_txt {
-    text-align: center;
+.atmtxt {
+    color: #0487df;
 }
-
-.sensimgsrc {
-    margin-left: auto;
-    margin-right: auto;
-    width: 15rem;
-    height: 15rem;
-}
-
-.sens_img {
-    display: flex;
-}*/
 
 .card-deck {
     margin: 40px !important;

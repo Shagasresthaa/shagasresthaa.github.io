@@ -121,6 +121,89 @@
                 </div>
             </div>
 
+            <p class="intro_txt">&emsp;&emsp;&emsp;All the data collected via these sensors is sent to a Flask based API
+                which stores the data in a postgres database. The data is sent via HTTPS protocol by an ESP-8266 module.
+                ESP-8266 is a low cost WiFi module that can connect to any access point on a 2.5G band. This module can
+                act as an Access Point or a Station or both. The data generated is also logged in an on-board micro-SD
+                module so that it can act as backup at any time. The data collected can be accessed via web based React
+                Dashboard or the React Native Mobile App. These dashboards can also show if a device is down and needs
+                repairs or if any kind of maintainance is required.
+            </p>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/rtcmod.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>RTC Clock (DS3231)</b></h3>
+                        </h5>
+                        <p class="card-text">RTC Clock is based on DS3231 RTC chip. This chip provides accurate date and
+                            time once finishing first time program setup of clock. This chip has a 3.3V Lithium Button
+                            Battery for auxilary power for preventing time config loss</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/oled.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>128x64 I2C Oled</b></h3>
+                        </h5>
+                        <p class="card-text">This is a small Oled display which can be used for displaying the data or
+                            any ASCII graphics. In this case this displays the recorded data from sensors. This specific
+                            display is of 128px in length and 64px in breadth.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/voltreg.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>AMS1117 Voltage Regulator</b></h3>
+                        </h5>
+                        <p class="card-text">ML8511 is a low cost high accuracy UV intensity sensor. This is used to
+                            measure the UV index of the surroundings. This uses the data and the voltage readings from
+                            sensor to calculate the UV intensity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/esp.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>ESP8266-01 WiFi Module</b></h3>
+                        </h5>
+                        <p class="card-text">It is a low power wifi module with esp8266 chip at its core. It has 2 GPIO
+                            pins of which one can be connected to ground for programming the ESP module.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/msdread.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>Micro SD module</b></h3>
+                        </h5>
+                        <p class="card-text">This is a low cost module for attaching a micro SD card for data logging.
+                            Supports upto an 8GB SD Card. Can be used easily by standard I/O Libraries.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="intro_txt">&emsp;&emsp;&emsp;All this data is controlled via two <span class="atmtxt"><b>ATMEGA
+                        328P</b></span> micro-controllers. These are small 8-bit RISC based AVR micro-controllers. Of
+                the two
+                microcontrollers, Primary micro-controller handles sensor data-monitoring and displaying it on the
+                onboard oled display and sending it to the secondary microcontroller while the secondary microcontroller
+                logs
+                the data to the onboard SD card module and sends data to ESP8266 for data transmission.</p>
         </div>
     </div>
 </body>
