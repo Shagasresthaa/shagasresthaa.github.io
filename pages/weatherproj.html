@@ -196,14 +196,32 @@
                             Supports upto an 8GB SD Card. Can be used easily by standard I/O Libraries.</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="../assets/atmega328ppu.png" alt="" class="cimg">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <h3 class="cdtxtw"><b>Atmega 328P PU</b></h3>
+                        </h5>
+                        <p class="card-text">It is a small low cost low power CMOS 8-bit micro-controller based on AVR
+                            optimised RISC Architecture. It has 32x8 General Purpose Working Registers and an inbuilt
+                            ADC (Analog to Digital Converter). It supports
+                            UART, I2C/IIC and SPI communication. It has 1KB EEPROM, 2KB of SRAM, 32KB
+                            of flash of which 0.5KB is used by bootloader and upto 16MHz clock speed.</p>
+                    </div>
+                </div>
             </div>
             <p class="intro_txt">&emsp;&emsp;&emsp;All this data is controlled via two <span class="atmtxt"><b>ATMEGA
-                        328P</b></span> micro-controllers. These are small 8-bit RISC based AVR micro-controllers. Of
+                        328P</b></span> micro-controllers. These are small 8-bit AVR optimised RISC based
+                micro-controllers. Of
                 the two
                 microcontrollers, Primary micro-controller handles sensor data-monitoring and displaying it on the
                 onboard oled display and sending it to the secondary microcontroller while the secondary microcontroller
                 logs
-                the data to the onboard SD card module and sends data to ESP8266 for data transmission.</p>
+                the data to the onboard SD card module and sends data to ESP8266 for data transmission. Both the
+                micro-controllers communicate via I2C bus in which one acts as Primary Chip while other acts as
+                Secondary Chip.</p>
         </div>
     </div>
 </body>
