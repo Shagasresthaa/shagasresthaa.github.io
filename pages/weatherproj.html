@@ -208,7 +208,49 @@
                 logs
                 the data to the onboard SD card module and sends data to ESP8266 for data transmission. Both the
                 micro-controllers communicate via I2C bus in which one acts as Primary Chip while other acts as
-                Secondary Chip.</p>
+                Secondary Chip. The data is logged with time stamps from a DS3231 RTC module which uses I2C protocol.
+                The logged data is saved to a micro SD card module which uses SPI protocol. Due to the modular nature of
+                the components, in case of any issue with module it can be repaired easily instead of reverting to SMD
+                soldering, etc.</p>
+
+            <p class="intro_txt">&emsp;&emsp;&emsp;The data from each node is transmitted to a Flask Rest API hosted on
+                heroku platform. It uses Postgresql as its database in order to track all nodes, get status of each
+                node, etc. Each node collects data in intervals of 60sec. This data is converted to a suitable json
+                format and sent to the API server once every hour to get around active time restrictions by heroku. This
+                data can be viewed from either the Weather Dashboard App which is a React JS application or its
+                ReactNative Counterpart.<span style="color: red;"> Please be aware that both the applications are still
+                    work in progress.</span> The dashboard application will show the individual status of nodes,
+                Graphical Representation of nodes and also lists any non-functional nodes. This data can be utilized to
+                create weather models to predict weather conditions or any other long term weather monitoring analysis
+                purposes.</p>
+            <div class="cissues">
+                <h2 class="hissues"><b>The current issues of the project are as follows:</b></h2>
+                <p class="pissues">
+                    <li class="liissues">
+                        The V4 node failed due to design issues in USB to UART converter chip i.e., CH340G
+                    </li>
+
+                    <li class="liissues">
+                        The atmega 2560 16AU bootloader burning failed everytime
+                    </li>
+
+                    <li class="liissues">
+                        The V5 node is delayed due to other college work I currently have
+                    </li>
+
+                    <li class="liissues">
+                        React applications delayed since im still learning React JS and React Native
+                    </li>
+
+                    <li class="liissues">
+                        Dual microcontroller design still in prototyping phase (Still successfully working out so far)
+                    </li>
+
+                    <li class="liissues">
+                        Arduino Code not yet stable enough working on resolving issues
+                    </li>
+                </p>
+            </div>
         </div>
         <div class="galheader">
             <h1 class="galhead"><b>Check out project images below:</b></h1>
