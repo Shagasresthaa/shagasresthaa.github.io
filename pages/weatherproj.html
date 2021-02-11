@@ -165,7 +165,7 @@
             </div>
             <p class="intro_txt">&emsp;&emsp;&emsp;The data from sensors comes through either I2C or SPI communication bus or individual analog and digital values. The data collected is formed into a packet and sent to the wireless module over the I2C bus. Here the STM32
                 acts as the sender and the ESP12E as reciever which takes the data and performs a HTTP request to the Flask Data Collection API. The API is hosted on heroku platform which gets that data and stores it in a database. The data can be accessed
-                via the React based Dashboard and the React Native based mobile application (Under Progress).
+                via the React based Dashboard and the React Native based mobile application (Under Progress). The collected readouts will contain the timestamp from the DS3231 module. The data collected is in 60 sec intervals.
             </p>
             <div class="cissues">
                 <h2 class="hissues"><b>The current status of the project is as follows:</b></h2>
@@ -201,25 +201,25 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im10.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt" style="color: #000000;">The V2 had many flaws and as some may point out the 90 degree bends. This was my first attempt at design.</p>
+                        <p class="ptxt" style="color: #000000;"><b>One of the early prototypes</b></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im11.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">The manufactured V2 PCB's from JLCPCB</p>
+                        <p class="ptxt">Manufactured prototypes from JLCPCB</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im12.jpg" alt="Third slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">V2 fully assembled and ready</p>
+                        <p class="ptxt">Prototype assembled and ready</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im13.jpg" alt="Fourth slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">Well everything worked except the ESP-8266 due to design flaw</p>
+                        <p class="ptxt">Working model except for wireless module due to design flaw</p>
                     </div>
                 </div>
 
@@ -232,13 +232,13 @@
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im22.jpg" alt="Fourth slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">V3 node manufactured from <b>Lion Circuits</b></p>
+                        <p class="ptxt" style="color: #000000;"><b>V3 node manufactured from Lion Circuits</b></p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im23.jpg" alt="Fourth slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">Assembled V3 node worked fine except ESP needed to be programmed seperately and Data pins for ESP were inverted</p>
+                        <p class="ptxt">Assembled V3 node</p>
                     </div>
                 </div>
             </div>
