@@ -38,12 +38,9 @@
 
             <div class="collapse navbar-collapse" id="iconm">
                 <ul class="nav navbar-nav ml-auto navbar-expand-sm">
-                    <li class="nav-item px-4"><a class="nav-link" href="/index.html"
-                            style="font-family: 'Ubuntu', sans-serif;">About Me</a></li>
-                    <li class="nav-item px-4"><a class="nav-link" href="/pages/projects.html"
-                            style="font-family: 'Ubuntu', sans-serif;">Projects</a></li>
-                    <li class="nav-item px-4"><a class="nav-link" href="/pages/contact.html"
-                            style="font-family: 'Ubuntu', sans-serif;">Contact</a></li>
+                    <li class="nav-item px-4"><a class="nav-link" href="/index.html" style="font-family: 'Ubuntu', sans-serif;">About Me</a></li>
+                    <li class="nav-item px-4"><a class="nav-link" href="/pages/projects.html" style="font-family: 'Ubuntu', sans-serif;">Projects</a></li>
+                    <li class="nav-item px-4"><a class="nav-link" href="/pages/contact.html" style="font-family: 'Ubuntu', sans-serif;">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -58,10 +55,8 @@
         </div>
         <div class="prj_intro">
             <p class="intro_txt">
-                &emsp;&emsp;&emsp;This Weather Monitoring System Project is a simple IoT project used to collect
-                Weather Data using deployed IoT Weather Nodes. The deployed nodes sends data to a flask based API that
-                uploads data to Postgres DB. The stats can be monitored via the React Based Weather Dashboard
-                Application. Each Node consists of 3 main sensors:<br></br>
+                &emsp;&emsp;&emsp;This Weather Monitoring System Project is a simple IoT project used to collect Weather Data using deployed IoT Weather Nodes which are configured in Star Topology. The deployed nodes sends data to a flask based API hosted on Heroku Platform
+                that uploads data to Postgres DB. The stats can be monitored via the React Based Weather Dashboard Application. Each Node consists of 3 main sensors:<br></br>
             </p>
             <div class="card-deck">
                 <div class="card">
@@ -70,13 +65,10 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <h3 class="cdtxtw"><b>BMP-180 (GY-68)</b></h3>
+                            <h3 class="cdtxtw"><b>BMP-280</b></h3>
                         </h5>
-                        <p class="card-text">BMP-180 is a low cost
-                            sensor that monitors Temperature,
-                            Pressure and
-                            Altitude with high precision. BMP-180 utilizes I2C/IIC protocol for communication with the
-                            micro-controller.</p>
+                        <p class="card-text" style="text-align: justify;">BMP-280 is a low cost sensor that monitors Temperature, Pressure and Altitude with high precision and is a successor to BMP-180. BMP-280 utilizes I2C/IIC protocol for communication with the micro-controller.
+                        </p>
                     </div>
                 </div>
                 <div class="card">
@@ -87,9 +79,8 @@
                         <h5 class="card-title">
                             <h3 class="cdtxtw"><b>DHT-22</b></h3>
                         </h5>
-                        <p class="card-text">DHT-22 is a low power Temperature and Humidity Sensor with relatively high
-                            accuracy. This is used to monitor the Humidity and also for cross referencing with the
-                            BMP-180 sensor Temperature readings. It has a single data pin for getting data from sensor.
+                        <p class="card-text" style="text-align: justify;">DHT-22 is a low power Temperature and Humidity Sensor with relatively high accuracy. This is used to monitor the Humidity and also for cross referencing with the BMP-180 sensor Temperature readings. It has a single data pin for
+                            getting data from sensor.
                         </p>
                     </div>
                 </div>
@@ -101,20 +92,14 @@
                         <h5 class="card-title">
                             <h3 class="cdtxtw"><b>ML8511 (GYML8511 breakout)</b></h3>
                         </h5>
-                        <p class="card-text">ML8511 is a low cost high accuracy UV intensity sensor. This is used to
-                            measure the UV index of the surroundings. This uses the data and the voltage readings from
-                            sensor to calculate the UV intensity.</p>
+                        <p class="card-text" style="text-align: justify;">ML8511 is a low cost high accuracy UV intensity sensor. This is used to measure the UV index of the surroundings. This uses the data and the voltage readings from sensor to calculate the UV intensity.</p>
                     </div>
                 </div>
             </div>
 
-            <p class="intro_txt">&emsp;&emsp;&emsp;All the data collected via these sensors is sent to a Flask based API
-                which stores the data in a postgres database. The data is sent via HTTPS protocol by an ESP-8266 module.
-                ESP-8266 is a low cost WiFi module that can connect to any access point on a 2.5G band. This module can
-                act as an Access Point or a Station or both. The data generated is also logged in an on-board micro-SD
-                module so that it can act as backup at any time. The data collected can be accessed via web based React
-                Dashboard or the React Native Mobile App. These dashboards can also show if a device is down and needs
-                repairs or if any kind of maintainance is required.
+            <p class="intro_txt">&emsp;&emsp;&emsp;All the data collected via these sensors is sent to a Flask based API which stores the data in a postgres database. The data is sent via HTTPS protocol by an ESP-12E module. ESP-12E is a low cost WiFi module that can connect
+                to any access point on a 2.5G band and supports IEEE 802.11 b/g/n protocol. This module can act as an Access Point or a Station or both. The data collected can be accessed via web based React Dashboard or the React Native Mobile App. These
+                dashboards can also show if a device is down and needs repairs or if any kind of maintainance is required.
             </p>
             <div class="card-deck">
                 <div class="card">
@@ -125,9 +110,7 @@
                         <h5 class="card-title">
                             <h3 class="cdtxtw"><b>RTC Clock (DS3231)</b></h3>
                         </h5>
-                        <p class="card-text">RTC Clock is based on DS3231 RTC chip. This chip provides accurate date and
-                            time once finishing first time program setup of clock. This chip has a 3.3V Lithium Button
-                            Battery for auxilary power for preventing time config loss</p>
+                        <p class="card-text" style="text-align: justify;">RTC Clock is based on DS3231 RTC chip. This chip provides accurate date and time once finishing first time program setup of clock. This chip has a 3.3V Lithium Button Battery for auxilary power for preventing time config loss</p>
                     </div>
                 </div>
                 <div class="card">
@@ -138,9 +121,7 @@
                         <h5 class="card-title">
                             <h3 class="cdtxtw"><b>128x64 I2C Oled</b></h3>
                         </h5>
-                        <p class="card-text">This is a small Oled display which can be used for displaying the data or
-                            any ASCII graphics. In this case this displays the recorded data from sensors. This specific
-                            display is of 128px in length and 64px in breadth.
+                        <p class="card-text" style="text-align: justify;">This is a small Oled display which can be used for displaying the data or any ASCII graphics. In this case this displays the recorded data from sensors. This specific display is of 128px in length and 64px in breadth.
                         </p>
                     </div>
                 </div>
@@ -150,11 +131,9 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <h3 class="cdtxtw"><b>AMS1117 Voltage Regulator</b></h3>
+                            <h3 class="cdtxtw"><b>LM7805 Voltage Regulator</b></h3>
                         </h5>
-                        <p class="card-text">ML8511 is a low cost high accuracy UV intensity sensor. This is used to
-                            measure the UV index of the surroundings. This uses the data and the voltage readings from
-                            sensor to calculate the UV intensity.</p>
+                        <p class="card-text" style="text-align: justify;">LM7805 is a 3 terminal Linear Voltage Regulator which takes the input voltage from the LiPo battery and converts it into 5V DC. It can output a max current of 1.5A. Input voltage ranges from 7V to 25V.</p>
                     </div>
                 </div>
             </div>
@@ -165,64 +144,27 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <h3 class="cdtxtw"><b>ESP8266-01 WiFi Module</b></h3>
+                            <h3 class="cdtxtw"><b>ESP12E Wireless Module</b></h3>
                         </h5>
-                        <p class="card-text">It is a low power wifi module with esp8266 chip at its core. It has 2 GPIO
-                            pins of which one can be connected to ground for programming the ESP module.</p>
+                        <p class="card-text" style="text-align: justify;">It is a power efficient wifi module with a lot of memory and GPIO options. It supports various protocols like I2C, SPI, UART, etc. It supports IEEE 802.11 b/g/n protocols. It can also support sleep on idle and works on 2.5G band.</p>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header">
-                        <img src="../assets/msdread.png" alt="" class="cimg">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            <h3 class="cdtxtw"><b>Micro SD module</b></h3>
-                        </h5>
-                        <p class="card-text">This is a low cost module for attaching a micro SD card for data logging.
-                            Supports upto an 8GB SD Card. Can be used easily by standard I/O Libraries.</p>
-                    </div>
-                </div>
+
                 <div class="card">
                     <div class="card-header">
                         <img src="../assets/atmega328ppu.png" alt="" class="cimg">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">
-                            <h3 class="cdtxtw"><b>Atmega 328P PU</b></h3>
+                            <h3 class="cdtxtw"><b>STM32F103C8T6 (Blue Pill)</b></h3>
                         </h5>
-                        <p class="card-text">It is a small low cost low power CMOS 8-bit micro-controller based on AVR
-                            optimised RISC Architecture. It has 32x8 General Purpose Working Registers and an inbuilt
-                            ADC (Analog to Digital Converter). It supports
-                            UART, I2C/IIC and SPI communication. It has 1KB EEPROM, 2KB of SRAM, 32KB
-                            of flash of which 0.5KB is used by bootloader and upto 16MHz clock speed.</p>
+                        <p class="card-text" style="text-align: justify;">It is a small low cost high performance microcontroller by STMicroelectronics. It supports 3.3V input voltage and accepts 5V on only a select few pins. It comes with 64KB flash, 20KB SRAM and has a max clock speed of 72MHz. It
+                            supports I2C,SPI,UART,CAN and USB communication protocols.</p>
                     </div>
                 </div>
             </div>
-            <p class="intro_txt">&emsp;&emsp;&emsp;All this data is controlled via two <span class="atmtxt"><b>ATMEGA
-                        328P</b></span> micro-controllers. These are small 8-bit AVR optimised RISC based
-                micro-controllers. Of
-                the two
-                microcontrollers, Primary micro-controller handles sensor data-monitoring and displaying it on the
-                onboard oled display and sending it to the secondary microcontroller while the secondary microcontroller
-                logs
-                the data to the onboard SD card module and sends data to ESP8266 for data transmission. Both the
-                micro-controllers communicate via I2C bus in which one acts as Primary Chip while other acts as
-                Secondary Chip. The data is logged with time stamps from a DS3231 RTC module which uses I2C protocol.
-                The logged data is saved to a micro SD card module which uses SPI protocol. Due to the modular nature of
-                the components, in case of any issue with module it can be repaired easily instead of reverting to SMD
-                soldering, etc.</p>
-
-            <p class="intro_txt">&emsp;&emsp;&emsp;The data from each node is transmitted to a Flask Rest API hosted on
-                heroku platform. It uses Postgresql as its database in order to track all nodes, get status of each
-                node, etc. Each node collects data in intervals of 60sec. This data is converted to a suitable json
-                format and sent to the API server once every hour to get around active time restrictions by heroku. This
-                data can be viewed from either the Weather Dashboard App which is a React JS application or its
-                ReactNative Counterpart.<span style="color: red;"> Please be aware that both the applications are still
-                    work in progress.</span> The dashboard application will show the individual status of nodes,
-                Graphical Representation of nodes and also lists any non-functional nodes. This data can be utilized to
-                create weather models to predict weather conditions or any other long term weather monitoring analysis
-                purposes.</p>
+            <p class="intro_txt">&emsp;&emsp;&emsp;
+            </p>
             <div class="cissues">
                 <h2 class="hissues"><b>The current issues of the project are as follows:</b></h2>
                 <p class="pissues">
@@ -269,9 +211,7 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im10.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt" style="color: #000000;">The V2 had many flaws and as some may point out the 90
-                            degree bends. This was my
-                            first attempt at design.</p>
+                        <p class="ptxt" style="color: #000000;">The V2 had many flaws and as some may point out the 90 degree bends. This was my first attempt at design.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -308,8 +248,7 @@
                 <div class="carousel-item">
                     <img class="d-block w-100 h-50 cimg1" src="../assets/im23.jpg" alt="Fourth slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <p class="ptxt">Assembled V3 node worked fine except ESP needed to be programmed seperately and
-                            Data pins for ESP were inverted</p>
+                        <p class="ptxt">Assembled V3 node worked fine except ESP needed to be programmed seperately and Data pins for ESP were inverted</p>
                     </div>
                 </div>
             </div>
