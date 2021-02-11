@@ -36,7 +36,6 @@ body {
 .bd1 {
   padding-top: 100px;
   width: 100%;
-  height: 100vh;
   background: linear-gradient(#5433FF, #20BDFF, #A5FECB);
 }
 
@@ -166,93 +165,42 @@ body {
   height: 50px;
 }
 
-/*css hover effects*/
-.wrapper {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.fa{
+  color: white;
+  padding: 15px;
+  margin: 0.5rem;
+  border:5px solid white;
+  border-radius: 100%;
 }
 
-/* Style the Un-order list by setting its list-style to none */
-.wrapper ul {
-  list-style: none;
-}
-
-/* Style the list items inside the UL list, by setting its width, height and line-height 
-  and float them to left and set its border and border-radius.
- */
-.wrapper ul li {
-  width: 75px;
-  height: 75px;
-  line-height: 75px;
-  margin: 0 10px;
+.wrapper{
   text-align: center;
-  border-radius: 50%;
-  border: 5px solid #D8E2DC;
-  float: left;
+}
+
+.fa-linkedin:hover{
+  color: blue;
+  border:5px solid blue;
+  box-shadow: 0 0 15px blue;
   transition: all 0.5s ease;
 }
 
-/* Style the icons by setting its color and margin-top value to 20px 
-to align it properly */
-
-.wrapper ul li .fa {
-  color: #d8dce2;
-  margin-top: 20px;
-  transition: all 0.5s ease;
-}
-
-/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-  to icons for glowing effect and use transition property for smooth transition effect. */
-
-/*linkedin*/
-.wrapper ul li:hover.linkedin {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-linkedin {
-  color: #3b5998;
-  text-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
-
-/*github*/
-.wrapper ul li:hover.github {
-  border: 5px solid black;
+.fa-github:hover{
+  color: black;
+  border:5px solid black;
   box-shadow: 0 0 15px black;
   transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover .fa-github {
-  color: black;
-  text-shadow: 0 0 15px black;
+.fa-instagram:hover{
+  color: purple;
+  border:5px solid purple;
+  box-shadow: 0 0 15px purple;
   transition: all 0.5s ease;
 }
 
-/* instagram */
-.wrapper ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
-  text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-/* resume */
-.wrapper ul li:hover.resume {
-  border: 5px solid #dd4b39;
-  box-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-file-word {
-  color: #dd4b39;
-  text-shadow: 0 0 15px #dd4b39;
+.fa-file-word:hover{
+  color: cyan;
+  border:5px solid cyan;
+  box-shadow: 0 0 15px cyan;
   transition: all 0.5s ease;
 }
