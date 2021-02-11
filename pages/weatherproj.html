@@ -163,39 +163,29 @@
                     </div>
                 </div>
             </div>
-            <p class="intro_txt">&emsp;&emsp;&emsp;
+            <p class="intro_txt">&emsp;&emsp;&emsp;The data from sensors comes through either I2C or SPI communication bus or individual analog and digital values. The data collected is formed into a packet and sent to the wireless module over the I2C bus. Here the STM32
+                acts as the sender and the ESP12E as reciever which takes the data and performs a HTTP request to the Flask Data Collection API. The API is hosted on heroku platform which gets that data and stores it in a database. The data can be accessed
+                via the React based Dashboard and the React Native based mobile application (Under Progress).
             </p>
             <div class="cissues">
-                <h2 class="hissues"><b>The current issues of the project are as follows:</b></h2>
+                <h2 class="hissues"><b>The current status of the project is as follows:</b></h2>
                 <p class="pissues">
                     <li class="liissues">
-                        The V4 node failed due to design issues in USB to UART converter chip i.e., CH340G
+                        Had to remove SD card from project due to memory issues
                     </li>
 
                     <li class="liissues">
-                        The atmega 2560 16AU bootloader burning failed everytime
+                        Still working on integrating ESP12E with STM32
                     </li>
 
                     <li class="liissues">
-                        The V5 node is delayed due to other college work I currently have
-                    </li>
-
-                    <li class="liissues">
-                        React applications delayed since im still learning React JS and React Native
-                    </li>
-
-                    <li class="liissues">
-                        Dual microcontroller design still in prototyping phase (Still successfully working out so far)
-                    </li>
-
-                    <li class="liissues">
-                        Arduino Code not yet stable enough working on resolving issues
+                        Working on method to auto detect display driver and use that specific driver
                     </li>
                 </p>
             </div>
         </div>
         <div class="galheader">
-            <h1 class="galhead"><b>Check out project images below:</b></h1>
+            <h1 class="galhead"><b>Check out older prototype images below:</b></h1>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
